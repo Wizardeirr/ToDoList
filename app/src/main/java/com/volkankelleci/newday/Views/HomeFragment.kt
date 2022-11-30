@@ -1,12 +1,13 @@
-package com.volkankelleci.newday
+package com.volkankelleci.newday.Views
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.volkankelleci.newday.R
 
-class YapilacaklarFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +19,8 @@ class YapilacaklarFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_yapilacaklar, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
+
 
 }

@@ -1,12 +1,11 @@
-package com.volkankelleci.newday
+package com.volkankelleci.newday.Views
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
-import java.time.Duration
+import com.volkankelleci.newday.R
 
 
 class MainActivity : AppCompatActivity() {
@@ -23,18 +22,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId==R.id.eklemeTusu){
+        if(item.itemId== R.id.eklemeTusu){
             val action=HomeFragmentDirections.actionHomeFragmentToEklemeFragment2()
-            Navigation.findNavController(this,R.id.fragmentContainerView).navigate(action)
+            Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
         }
-        if(item.itemId==R.id.evTusu){
+        if(item.itemId== R.id.evTusu){
             val action=HomeFragmentDirections.actionHomeFragmentSelf2()
-            Navigation.findNavController(this,R.id.fragmentContainerView).navigate(action)
+            Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
         }
 
-        if(item.itemId==R.id.yapilacaklarTusu){
+        if(item.itemId== R.id.yapilacaklarTusu){
             val action=HomeFragmentDirections.actionHomeFragmentToYapilacaklarFragment()
-            Navigation.findNavController(this,R.id.fragmentContainerView).navigate(action)
+            Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
 
         }
 

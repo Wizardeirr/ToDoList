@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.volkankelleci.newday.HomeFragment"
+        android:name="com.volkankelleci.newday.Views.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -22,7 +22,7 @@
     </fragment>
     <fragment
         android:id="@+id/yapilacaklarFragment"
-        android:name="com.volkankelleci.newday.YapilacaklarFragment"
+        android:name="com.volkankelleci.newday.Views.YapilacaklarFragment"
         android:label="fragment_yapilacaklar"
         tools:layout="@layout/fragment_yapilacaklar" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/eklemeFragment"
-        android:name="com.volkankelleci.newday.EklemeFragment"
+        android:name="com.volkankelleci.newday.Views.EklemeFragment"
         android:label="fragment_ekleme"
         tools:layout="@layout/fragment_ekleme" >
         <action

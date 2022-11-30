@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EklemeFragment">
+    tools:context=".Views.EklemeFragment">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="31dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/alinacakBilgiler"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/alinacakBilgiler"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="72dp"
@@ -25,6 +25,7 @@
         android:layout_marginBottom="21dp"
         android:ems="10"
         android:hint="Yapılacaklar"
+        android:gravity="center"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +40,7 @@
         android:onClick="kaydetButonu"
         android:text="Kaydet"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintEnd_toEndOf="@+id/alinacakBilgiler"
+        app:layout_constraintStart_toStartOf="@+id/alinacakBilgiler"
+        app:layout_constraintTop_toBottomOf="@+id/alinacakBilgiler" />
 </androidx.constraintlayout.widget.ConstraintLayout>
