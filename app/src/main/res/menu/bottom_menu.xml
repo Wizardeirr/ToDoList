@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/evTusu"
+    android:icon="@drawable/home_icon"
+    android:title="Home"
+    >
+
+</item>
+    <item android:title="Add"
+        android:id="@+id/eklemeTusu"
+        android:icon="@drawable/add_icon"
+        >
+
+    </item>
+    <item android:id="@+id/yapilacaklarTusu"
+        android:title="Done List"
+        android:icon="@drawable/done_list"
+        >
+
+    </item>
+</menu>
