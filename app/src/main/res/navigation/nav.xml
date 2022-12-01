@@ -14,19 +14,7 @@
             android:id="@+id/action_homeFragment_to_eklemeFragment2"
             app:destination="@id/eklemeFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_yapilacaklarFragment"
-            app:destination="@id/yapilacaklarFragment" />
-        <action
             android:id="@+id/action_homeFragment_self2"
-            app:destination="@id/homeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/yapilacaklarFragment"
-        android:name="com.volkankelleci.newday.Views.YapilacaklarFragment"
-        android:label="fragment_yapilacaklar"
-        tools:layout="@layout/fragment_yapilacaklar" >
-        <action
-            android:id="@+id/action_yapilacaklarFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
     <fragment

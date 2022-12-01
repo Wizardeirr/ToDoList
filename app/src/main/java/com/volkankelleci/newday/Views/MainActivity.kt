@@ -26,19 +26,8 @@ class MainActivity : AppCompatActivity() {
             val action=HomeFragmentDirections.actionHomeFragmentToEklemeFragment2()
             Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
         }
-        if(item.itemId== R.id.evTusu){
-            val action=HomeFragmentDirections.actionHomeFragmentSelf2()
-            Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
-        }
-
-        if(item.itemId== R.id.yapilacaklarTusu){
-            val action=HomeFragmentDirections.actionHomeFragmentToYapilacaklarFragment()
-            Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
-
-        }
-
-            return super.onOptionsItemSelected(item)
-        }
+        return super.onOptionsItemSelected(item)
+    }
 
 
     }

@@ -23,9 +23,6 @@ class EklemeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
-
     }
 
     override fun onCreateView(
@@ -44,6 +41,7 @@ class EklemeFragment : Fragment() {
         viewModel.refreshData()
         yapilacaklarListesiRecycler.layoutManager=LinearLayoutManager(context)
         yapilacaklarListesiRecycler.adapter=yapilacaklarRecyclerAdapter
+
         observeLiveData()
 
     }
