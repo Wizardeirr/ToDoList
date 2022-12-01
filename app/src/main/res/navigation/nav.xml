@@ -13,9 +13,6 @@
         <action
             android:id="@+id/action_homeFragment_to_eklemeFragment2"
             app:destination="@id/eklemeFragment" />
-        <action
-            android:id="@+id/action_homeFragment_self2"
-            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/eklemeFragment"

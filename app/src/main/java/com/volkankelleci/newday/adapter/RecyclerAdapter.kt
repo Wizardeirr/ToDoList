@@ -4,12 +4,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.volkankelleci.newday.Model.toDoList
 import com.volkankelleci.newday.R
 import com.volkankelleci.newday.adapter.RecyclerAdapter.RecyclerDondurVH
 import kotlinx.android.synthetic.main.recycler_raw.view.*
 
-class RecyclerAdapter(val veriListesi: ArrayList<toDoList>) :
+class RecyclerAdapter(val veriListesi: ArrayList<String>) :
     RecyclerView.Adapter<RecyclerDondurVH>() {
     class RecyclerDondurVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -24,15 +23,14 @@ class RecyclerAdapter(val veriListesi: ArrayList<toDoList>) :
 
     override fun onBindViewHolder(holder: RecyclerDondurVH, position: Int) {
 
-        holder.itemView.baslikEkle.text=veriListesi.get(position).yapilacaklar
-        //gorsel Eklenecek
+
     }
 
     override fun getItemCount(): Int {
 
         return veriListesi.size
     }
-    fun verileriGuncelle(yeniVeriListesi:List<toDoList>){
+    fun verileriGuncelle(yeniVeriListesi:List<String>){
         veriListesi.clear()
         veriListesi.addAll(yeniVeriListesi)
 
